@@ -10,7 +10,10 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "dev": "ts-node src/index.ts",
-    "generate-test-data": "ts-node src/test-data-generator.ts"
+    "generate-test-data": "ts-node src/test-data-generator.ts",
+    "demo": "npx ts-node src/demo.ts",
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "npm run build"
   },
   "keywords": [
     "digital-signatures",
@@ -19,8 +22,24 @@
     "hash-chain",
     "security"
   ],
-  "author": "Developer",
+  "author": "AKSHAYKRISHNA012",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AKSHAYKRISHNA012/Secure-Signature-Traversal.git"
+  },
+  "homepage": "https://github.com/AKSHAYKRISHNA012/Secure-Signature-Traversal#readme",
+  "bugs": {
+    "url": "https://github.com/AKSHAYKRISHNA012/Secure-Signature-Traversal/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.5",
     "@types/node": "^20.6.3",
