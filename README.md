@@ -219,4 +219,3 @@ npm run dev
 
 ---
 
-**Built with ❤️ for secure document workflows**
